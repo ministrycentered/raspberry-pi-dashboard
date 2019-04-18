@@ -43,7 +43,6 @@ Paste in this as the contents:
 ```bash
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
-#@xscreensaver -no-splash
 @xset s off
 @xset -dpms
 @xset s noblank
@@ -55,7 +54,7 @@ Paste in this as the contents:
 That will disable the screensaver, disable the power savings (that turn the display off), clear any warnings from the browser, automatically start our script, and hide the mouse cursor.
 
 
-# Chaning the displayed page
+# Changing the displayed page
 
 The Ruby script is a tiny web server, so you can control the displayed page by accessing special urls. The format is:
 
