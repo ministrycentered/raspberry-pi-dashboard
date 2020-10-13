@@ -13,7 +13,7 @@ DEFAULT_PAGE = "https://weather.com"
 def set_kiosk_url(url)
   puts "Setting new kiosk URL: #{url}"
   `pkill -f chromium-browser`
-  fork { exec("DISPLAY=:0 chromium-browser --fast --fast-start --no-first-run --noerrdialogs --disable-infobars --incongnito -kiosk #{url} &") }
+  fork { exec("DISPLAY=:0 chromium-browser --fast --fast-start --disable-translate --no-first-run --noerrdialogs --disable-infobars --incongnito -kiosk #{url} &") }
   return
 end
 
